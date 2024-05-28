@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffe6e6;
+    margin: 0;
+    flex-direction: column;
+}
+
+.heart-container {
+    font-size: 5em;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.heart-container:hover {
+    transform: scale(1.1);
+}
+
+.proposal-message {
+    display: none;
+    margin-top: 20px;
+    font-size: 2em;
+    color: #ff3366;
+    animation: reveal 1s ease-out forwards;
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
